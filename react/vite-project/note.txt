@@ -1,0 +1,24 @@
+React consider tag as data
+we can store and return tag
+function can only returnq only one tag
+use {}inside tage to perform js operation (+,_,....variable call, )
+
+
+basic of html 
+5.component
+address
+father 
+mother 
+info
+6.pros
+passing pros other than string
+getting props
+
+external css
+
+usestate hook(hook is function )
+
+react router dom
+form
+hit api
+useEffect hook

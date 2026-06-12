@@ -1,0 +1,10 @@
+//define arrow function
+
+let fun1=()=>{
+    console.log("i'm a function")
+}
+console.log("a")
+fun1; //this is wrong way to call function
+console.log("b")
+    fun1()
+console.log("c")
