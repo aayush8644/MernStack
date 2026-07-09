@@ -1,0 +1,101 @@
+.cosmos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0e1f3d;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.12);
+}
+
+.cosmos-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cosmos-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.cosmos-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.cosmos-nav a:hover,
+.cosmos-nav a.active {
+  color: #7cd0ff;
+}
+
+.cosmos-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.cosmos-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background: #ffffff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.cosmos-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.cosmos-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.cosmos-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .cosmos-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cosmos-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    display: none;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .cosmos-nav.show {
+    display: flex;
+  }
+
+  .cosmos-nav a {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .cosmos-nav a:last-child {
+    border-bottom: none;
+  }
+}

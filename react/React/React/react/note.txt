@@ -1,0 +1,19 @@
+5 ) component
+Address
+Father
+6) props (opening tags vitra)
+passing props other than string
+gettings props
+
+external css
+usestack hook is a function  use name is start with use
+react-router-dom
+form
+hit api
+useEffect hook
+
+react-router-dom
+form
+hit api
+useEffcet hook
+
